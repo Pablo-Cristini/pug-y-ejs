@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ingresa los produtos</h1>
+    <form action="/product" method="post" id="formPug">
+        <input type="text" placeholder="nombre del producto" name="name">
+        <input type="number" placeholder="precio" name="price">
+        <input type="text" placeholder="imagen del producto" name="thumbnail">
+        <input type="submit" value="cargar producto">
+    </form>
+
+    <button id="verProducto">Ver productos</button>
+
+    <script>
+        const verProducto = document.getElementById('verProducto')
+        verProducto.addEventListener("click", (event) => {
+        window.location = '/product';
+    })
+    </script>
+</body>
+</html>

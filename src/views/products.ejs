@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="cargaProducto">Cargar productos</button>
+    <ul>
+        <ul><% products.forEach(product =>{ %>
+            <li> 
+                <p>nombre: <%= product.name %></p>
+                <p>nombre: <%= product.price %></p>
+                <img src="<%= product.thumbnail %>" width="60">
+            </li>
+            <% }) %>
+        </ul>
+    </ul>
+
+    <script>
+        const cargaProducto = document.getElementById('cargaProducto')
+        cargaProducto.addEventListener("click", (event) => {
+        window.location = '/';
+    })
+    </script>
+    
+</body>
+</html>
