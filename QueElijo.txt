@@ -1,1 +1,0 @@
-En mi proyecto creo que elegiria ejs ya que pug me parece muy rebuscado
